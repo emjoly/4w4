@@ -1,0 +1,29 @@
+/*
+Theme Name: theme-name
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: Emily Joly
+Author URI: https://wordpress.org/
+Description: theme de base developpé dans le cadre du cours 4w4
+Version: 1.0
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: theme-name
+Theme developpé dans le cadre du cours 4w4
+*/
+// https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
+
+/*/////////////////////////////////////////////////*/
+/* variables css                                   */
+/*/////////////////////////////////////////////////*/
+@import "variables";
+
+/*/////////////////////////////////////////////////*/
+/* règles de normalization                         */
+/*/////////////////////////////////////////////////*/
+@import "normalize";
+
+/*/////////////////////////////////////////////////*/
+/* règles de base                                  */
+/*/////////////////////////////////////////////////*/
+@import "base/h";
