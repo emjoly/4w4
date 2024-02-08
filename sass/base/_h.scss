@@ -10,7 +10,9 @@ h1{
 h2{
   font-size: clamp(1rem, -0.57rem + 6.29vw, 3.75rem);
 }
-h3{}
+h3{
+  font-size: clamp(0.7rem, -0.3rem + 3vw, 2.5rem);
+}
 h4{}
 h5{}
 h6{}

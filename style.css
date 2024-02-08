@@ -21,6 +21,8 @@ Theme developpé dans le cadre du cours 4w4
   --couleur-arriere-galerie: #76b8e7;
   --couleur-arriere-evenement: rgb(20, 199, 205);
   --couleur-arriere-footer: #003d69;
+  --largeur-max: 900px;
+  --couleur-noir: rgb(238, 0, 255);
 }
 
 /*/////////////////////////////////////////////////*/
@@ -36,6 +38,10 @@ h1 {
 
 h2 {
   font-size: clamp(1rem, -0.57rem + 6.29vw, 3.75rem);
+}
+
+h3 {
+  font-size: clamp(0.7rem, -0.3rem + 3vw, 2.5rem);
 }
 
 /*/////////////////////////////////////////////////*/
@@ -56,8 +62,8 @@ body {
 .global > section,
 .global > header,
 .glabal > footer {
-  flex: 0 1 900px;
-  border: 1px solid black;
+  flex: 0 1 var(--largeur-max);
+  border: 1px solid var(--couleur-noir);
   background-color: rgba(255, 0, 251, 0.1);
   padding: 5rem 1rem;
 }
