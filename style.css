@@ -28,7 +28,7 @@ Theme developpé dans le cadre du cours 4w4
   */
   --nb-element: 5;
   --increment-angle: calc(360deg / var(--nb-element));
-  --angle-initial: 180deg;
+  --angle-initial: 225deg;
   --hu1: var(--angle-initial);
   --hu2: calc(var(--hu1) + var(--increment-angle));
   --hu3: calc(var(--hu2) + var(--increment-angle));

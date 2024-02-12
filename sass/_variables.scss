@@ -13,15 +13,15 @@
   --nb-element: 5;
   --increment-angle: calc(360deg / var(--nb-element));
   // 360 / 5 = 72
-  --angle-initial: 180deg;
+  --angle-initial: 225deg;
   --hu1: var(--angle-initial);
   --hu2: calc(var(--hu1) + var(--increment-angle));
   --hu3: calc(var(--hu2) + var(--increment-angle));
   --hu4: calc(var(--hu3) + var(--increment-angle));
   --hu5: calc(var(--hu4) + var(--increment-angle));
 
-  --s-arriere: 100%;
-  --l-arriere: 75%;
+  --s-arriere: 100%; //saturation
+  --l-arriere: 75%; //luminosité
   --s-couleur: 100%;
   --l-couleur: 15%;
 
