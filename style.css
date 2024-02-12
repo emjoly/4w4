@@ -26,11 +26,19 @@ Theme developpé dans le cadre du cours 4w4
   --largeur-max: 900px;
   --couleur-noir: rgb(238, 0, 255);
   */
-  --couleur-arriere-entete: hsl(200, 100%, 50%);
-  --couleur-arriere-accueil: hsl(260, 100%, 50%);
-  --couleur-arriere-galerie: hsl(320, 100%, 50%);
-  --couleur-arriere-evenement: hsl(20, 100%, 50%);
-  --couleur-arriere-footer: hsl(80, 100%, 50%);
+  --nb-element: 5;
+  --increment-angle: calc(360deg / var(--nb-element));
+  --angle-initial: 180deg;
+  --hu1: var(--angle-initial);
+  --hu2: calc(var(--hu1) + var(--increment-angle));
+  --hu3: calc(var(--hu2) + var(--increment-angle));
+  --hu4: calc(var(--hu3) + var(--increment-angle));
+  --hu5: calc(var(--hu4) + var(--increment-angle));
+  --couleur-arriere-entete: hsl(var(--hu1), 100%, 50%);
+  --couleur-arriere-accueil: hsl(var(--hu2), 100%, 50%);
+  --couleur-arriere-galerie: hsl(var(--hu3), 100%, 50%);
+  --couleur-arriere-evenement: hsl(var(--hu4), 100%, 50%);
+  --couleur-arriere-footer: hsl(var(--hu5), 100%, 50%);
   --largeur-max: 900px;
   --couleur-noir: rgb(238, 0, 255);
   --couleur-entete: hsl(200, 100%, 15%);
@@ -88,7 +96,7 @@ body {
 
 #entete {
   background-color: var(--couleur-arriere-entete);
-  color: var(--couleur-arriere-entete);
+  color: var(--couleur-entete);
 }
 
 #accueil {
@@ -108,5 +116,5 @@ body {
 
 #footer {
   background-color: var(--couleur-arriere-footer);
-  color: var(--couleur-arriere-footer);
+  color: var(--couleur-footer);
 }
