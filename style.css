@@ -34,18 +34,22 @@ Theme developpé dans le cadre du cours 4w4
   --hu3: calc(var(--hu2) + var(--increment-angle));
   --hu4: calc(var(--hu3) + var(--increment-angle));
   --hu5: calc(var(--hu4) + var(--increment-angle));
-  --couleur-arriere-entete: hsl(var(--hu1), 100%, 50%);
-  --couleur-arriere-accueil: hsl(var(--hu2), 100%, 50%);
-  --couleur-arriere-galerie: hsl(var(--hu3), 100%, 50%);
-  --couleur-arriere-evenement: hsl(var(--hu4), 100%, 50%);
-  --couleur-arriere-footer: hsl(var(--hu5), 100%, 50%);
+  --s-arriere: 100%;
+  --l-arriere: 50%;
+  --s-couleur: 100%;
+  --l-couleur: 15%;
+  --couleur-arriere-entete: hsl(var(--hu1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-accueil: hsl(var(--hu2), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-galerie: hsl(var(--hu3), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-evenement: hsl(var(--hu4), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-footer: hsl(var(--hu5), var(--s-arriere), var(--l-arriere));
   --largeur-max: 900px;
   --couleur-noir: rgb(238, 0, 255);
-  --couleur-entete: hsl(200, 100%, 15%);
-  --couleur-accueil: hsl(260, 100%, 15%);
-  --couleur-galerie: hsl(320, 100%, 15%);
-  --couleur-evenement: hsl(20, 100%, 15%);
-  --couleur-footer: hsl(80, 100%, 15%);
+  --couleur-entete: hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
+  --couleur-accueil: hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
+  --couleur-galerie: hsl(var(--hu3), var(--s-couleur), var(--l-couleur));
+  --couleur-evenement: hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
+  --couleur-footer: hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
 }
 
 /*/////////////////////////////////////////////////*/
@@ -90,7 +94,6 @@ body {
 .glabal > footer {
   flex: 0 1 var(--largeur-max);
   border: 1px solid var(--couleur-noir);
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 5rem 1rem;
 }
 

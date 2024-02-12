@@ -16,7 +16,6 @@ body{
   // flex: grow (0=non 1=oui), shrink, basis (width base)
   flex: 0 1 var(--largeur-max);
   border: 1px solid var(--couleur-noir);
-  background-color: rgba(#000, .5);
   padding: 5rem 1rem;
 }
 
