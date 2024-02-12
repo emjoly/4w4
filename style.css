@@ -35,7 +35,7 @@ Theme developpé dans le cadre du cours 4w4
   --hu4: calc(var(--hu3) + var(--increment-angle));
   --hu5: calc(var(--hu4) + var(--increment-angle));
   --s-arriere: 100%;
-  --l-arriere: 50%;
+  --l-arriere: 75%;
   --s-couleur: 100%;
   --l-couleur: 15%;
   --couleur-arriere-entete: hsl(var(--hu1), var(--s-arriere), var(--l-arriere));
@@ -91,9 +91,10 @@ body {
 
 .global > section,
 .global > header,
-.glabal > footer {
+.global > footer {
   flex: 0 1 var(--largeur-max);
   border: 1px solid var(--couleur-noir);
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 5rem 1rem;
 }
 
