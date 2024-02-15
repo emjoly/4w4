@@ -15,8 +15,8 @@ body{
 .global > footer{
   // flex: grow (0=non 1=oui), shrink, basis (width base)
   flex: 0 1 var(--largeur-max);
-  border: 1px solid var(--couleur-noir);
-  background-color: rgba(#000, .2);
+  // border: 1px solid var(--couleur-noir);
+  // background-color: rgba(#000, .2);
   padding: 5rem 1rem;
 }
 
@@ -25,23 +25,39 @@ body{
   color: var(--couleur-entete);
   position: relative;
 }
+
 #accueil{
   background-color: var(--couleur-arriere-accueil);
   color: var(--couleur-accueil);
- 
 }
+
 #galerie{
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
   z-index: 1;
-  background: linear-gradient(180deg, var(--couleur-arriere-accueil) 50%, var(--couleur-arriere-galerie) 50%);
+  background: linear-gradient(180deg, var(--couleur-arriere-accueil) 50%, var(--couleur-arriere-evenement) 50%);
 }
+
 #evenement{
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-evenement);
   position: relative;
 }
+
 #footer{
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
+}
+
+blockquote {
+  font-style: italic;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: var(--couleur-blanc);
+}
+a{
+  color: var(--couleur-blanc);
 }
