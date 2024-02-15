@@ -1,6 +1,6 @@
 .vague {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -12,8 +12,4 @@
   display: block;
   width: calc(111% + 1.3px);
   height: 72px;
-}
-
-.vague .shape-fill {
-  fill: #FFFFFF;
 }
