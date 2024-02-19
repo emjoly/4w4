@@ -22,11 +22,13 @@ Theme developpé dans le cadre du cours 4w4
 /* règles de base                                  */
 /*/////////////////////////////////////////////////*/
 @import "base/h";
+@import "base/bouton";
 
 /*/////////////////////////////////////////////////*/
 /* règles de la pagination                         */
 /*/////////////////////////////////////////////////*/
 @import "layout";
+@import "entete";
 
 /*/////////////////////////////////////////////////*/
 /* règles des séparations                          */

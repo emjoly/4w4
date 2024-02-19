@@ -28,7 +28,7 @@ Theme developpé dans le cadre du cours 4w4
   */
   --nb-element: 5;
   --increment-angle: calc(360deg / var(--nb-element));
-  --angle-initial: 180deg;
+  --angle-initial: 240deg;
   --hu1: var(--angle-initial);
   --hu2: calc(var(--hu1) + var(--increment-angle));
   --hu3: calc(var(--hu2) + var(--increment-angle));
@@ -71,15 +71,19 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1rem, -0.57rem + 6.29vw, 3.75rem);
+  font-size: clamp(1.25rem, -0.57rem + 6.29vw, 3.75rem);
 }
 
 h3 {
-  font-size: clamp(0.7rem, -0.3rem + 3vw, 2.5rem);
+  font-size: clamp(1rem, 0.2rem + 3.33vw, 2.5rem);
 }
 
 h2:hover {
   color: rgba(0, 0, 0, 0.1);
+}
+
+button {
+  font-size: clamp(1.25rem, -0.3rem + 3.33vw, 2.5rem);
 }
 
 /*/////////////////////////////////////////////////*/
@@ -100,8 +104,12 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 var(--largeur-max);
+  flex: 0 1 1100px;
   padding: 5rem 1rem;
+}
+
+.global > header {
+  flex: 1;
 }
 
 #entete {
@@ -145,6 +153,13 @@ blockquote {
 
 a {
   color: var(--couleur-blanc);
+}
+
+.entete__header {
+  background-image: url("images/hornet.png");
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: 100% 50%;
 }
 
 /*/////////////////////////////////////////////////*/

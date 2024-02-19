@@ -13,7 +13,7 @@
   --nb-element: 5;
   --increment-angle: calc(360deg / var(--nb-element));
   // 360 / 5 = 72
-  --angle-initial: 180deg;
+  --angle-initial: 240deg;
   --hu1: var(--angle-initial);
   --hu2: calc(var(--hu1) + var(--increment-angle));
   --hu3: calc(var(--hu2) + var(--increment-angle));
