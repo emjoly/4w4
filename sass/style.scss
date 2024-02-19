@@ -23,6 +23,7 @@ Theme developpé dans le cadre du cours 4w4
 /*/////////////////////////////////////////////////*/
 @import "base/h";
 @import "base/bouton";
+@import "base/liens";
 
 /*/////////////////////////////////////////////////*/
 /* règles de la pagination                         */
@@ -34,5 +35,4 @@ Theme developpé dans le cadre du cours 4w4
 /* règles des séparations                          */
 /*/////////////////////////////////////////////////*/
 @import "fx/vague";
-
 @import "fx/diagonal";
