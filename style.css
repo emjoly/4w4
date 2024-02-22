@@ -164,6 +164,13 @@ blockquote {
   background-color: var(--couleur-blanc);
 }
 
+@media (max-width: 480px) {
+  .entete__header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
 /*/////////////////////////////////////////////////*/
 /* sections de pages                               */
 /*/////////////////////////////////////////////////*/
