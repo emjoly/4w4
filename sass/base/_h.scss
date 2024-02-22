@@ -5,9 +5,11 @@ Sélecteur textuel de base
 // font size clamp generator --> clamp(min, % de la place que ca prend sur l'écran, max)
 h1{
   font-size: clamp(1.5rem, -2.88rem + 14vw, 5rem);
+  text-shadow: 1px 1px 5px pink;
 }
 h2{
   font-size: clamp(1.25rem, -0.57rem + 6.29vw, 3.75rem);
+  text-shadow: 1px 1px 5px pink;
 }
 h3{
   font-size: clamp(1rem, 0.2rem + 3.33vw, 2.5rem);

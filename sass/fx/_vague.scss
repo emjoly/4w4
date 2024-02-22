@@ -13,3 +13,9 @@
   width: calc(111% + 1.3px);
   height: 72px;
 }
+
+@media (max-width: 480px){
+  .vague svg {
+    height: 30px;
+  }
+}

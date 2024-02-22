@@ -4,3 +4,9 @@
   background-size: 75%;
   background-position: 100% 50%;
 }
+
+@media (max-width: 480px){
+.entete__header{
+  background-position: center;
+}
+}
