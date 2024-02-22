@@ -64,7 +64,9 @@ blockquote {
 }
 
 @media (max-width: 480px){
-  .entete__header{
+  .global > section,
+  .global > header,
+  .global > footer{
     align-items: center;
     display: flex;
     flex-direction: column;

@@ -16,18 +16,25 @@ Theme developpé dans le cadre du cours 4w4
 /* variables css                                   */
 /*/////////////////////////////////////////////////*/
 :root {
-  --nb-element: 5;
+  --nb-element: 8;
   --increment-angle: calc(360deg / var(--nb-element));
-  --angle-initial: 240deg;
+  --angle-initial: 340deg;
   --hu1: var(--angle-initial);
   --hu2: calc(var(--hu1) + var(--increment-angle));
   --hu3: calc(var(--hu2) + var(--increment-angle));
   --hu4: calc(var(--hu3) + var(--increment-angle));
   --hu5: calc(var(--hu4) + var(--increment-angle));
-  --s-arriere: 100%;
-  --l-arriere: 75%;
+  --hu6: calc(var(--hu5) + var(--increment-angle));
+  --hu7: calc(var(--hu6) + var(--increment-angle));
+  --hu8: calc(var(--hu7) + var(--increment-angle));
+  --s-arriere1: 70%;
+  --l-arriere1: 75%;
+  --s-couleur1: 100%;
+  --l-couleur1: 10%;
+  --s-arriere: 45%;
+  --l-arriere: 25%;
   --s-couleur: 100%;
-  --l-couleur: 15%;
+  --l-couleur: 85%;
   /*
    --couleur-arriere-entete: hsl(var(--hu1), var(--s-arriere), var(--l-arriere));
    --couleur-arriere-accueil: hsl(var(--hu2), var(--s-arriere), var(--l-arriere));
@@ -38,19 +45,19 @@ Theme developpé dans le cadre du cours 4w4
   --largeur-max: 900px;
   --couleur-blanc: #fff;
   --hu2: calc(var(--hu1) + 180deg);
-  --couleur-entete: hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
-  --couleur-accueil: hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
-  --couleur-galerie: hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
-  --couleur-evenement: hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
-  --couleur-footer: hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
-  --couleur-arriere-entete: hsl(var(--hu1), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-accueil: hsl(var(--hu2), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-galerie: hsl(var(--hu1), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-evenement: hsl(var(--hu2), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-footer: hsl(var(--hu1), var(--s-arriere), var(--l-arriere));
-  --couleur-lien: hsl(333, 64%, 29%);
+  --couleur-entete: hsl(var(--hu1), var(--s-couleur1), var(--l-couleur1));
+  --couleur-accueil: hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
+  --couleur-galerie: hsl(var(--hu3), var(--s-couleur1), var(--l-couleur1));
+  --couleur-evenement: hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
+  --couleur-footer: hsl(var(--hu1), var(--s-couleur1), var(--l-couleur1));
+  --couleur-arriere-entete: hsl(var(--hu1), var(--s-arriere1), var(--l-arriere1));
+  --couleur-arriere-accueil: hsl(var(--hu1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-galerie: hsl(var(--hu3), var(--s-arriere1), var(--l-arriere1));
+  --couleur-arriere-evenement: hsl(var(--hu1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-footer: hsl(var(--hu1), var(--s-arriere1), var(--l-arriere1));
+  --couleur-lien: hsl(314, 100%, 83%);
   --couleur-lien-hover: hsl(258, 61%, 58%);
-  --couleur-lien-visited: hsl(231, 100%, 50%);
+  --couleur-lien-visited: hsl(297, 100%, 15%);
 }
 
 /*/////////////////////////////////////////////////*/
@@ -165,7 +172,9 @@ blockquote {
 }
 
 @media (max-width: 480px) {
-  .entete__header {
+  .global > section,
+  .global > header,
+  .global > footer {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -242,8 +251,4 @@ blockquote {
   display: flex;
   justify-content: center;
   gap: 2rem;
-}
-
-.sociaux > path {
-  color: red;
 }
