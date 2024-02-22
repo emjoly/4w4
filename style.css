@@ -75,16 +75,16 @@ h2:hover {
   color: rgba(0, 0, 0, 0.1);
 }
 
-button {
+button.entete__button {
   font-size: clamp(1.25rem, -0.3rem + 3.33vw, 2.5rem);
   padding: 24px 12px;
   background-image: linear-gradient(90deg, rgba(255, 149, 205, 0.7), rgb(137, 43, 97));
   transition: transform 0.2s ease-in-out;
 }
-button:hover {
+button.entete__button:hover {
   background-image: linear-gradient(90deg, rgb(137, 43, 97), rgba(255, 149, 205, 0.7));
 }
-button:active {
+button.entete__button:active {
   background-image: linear-gradient(90deg, rgb(137, 43, 97), rgba(255, 149, 205, 0.7));
   transform: scale(0.9);
 }
@@ -164,11 +164,22 @@ blockquote {
   background-color: var(--couleur-blanc);
 }
 
+/*/////////////////////////////////////////////////*/
+/* sections de pages                               */
+/*/////////////////////////////////////////////////*/
 .entete__header {
   background-image: url("images/hornet.png");
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: 100% 50%;
+}
+
+.footer__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
 }
 
 /*/////////////////////////////////////////////////*/
@@ -205,4 +216,27 @@ blockquote {
   z-index: -1;
   transform: skewY(-5deg);
   background-color: var(--couleur-arriere-galerie);
+}
+
+/*/////////////////////////////////////////////////*/
+/* composantes                                     */
+/*/////////////////////////////////////////////////*/
+.recherche {
+  display: flex;
+  border: 1px solid #aaa;
+  justify-content: center;
+}
+
+.recherche__input {
+  display: block;
+}
+
+.sociaux {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sociaux > path {
+  color: red;
 }
