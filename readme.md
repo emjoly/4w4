@@ -1,4 +1,4 @@
-# Exercice 1
+# lab3
 
 ## Reproduire et améliorer la maquette présentée en cours
 
