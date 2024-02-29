@@ -108,6 +108,10 @@ a:visited {
   color: var(--couleur-lien-visited);
 }
 
+nav {
+  padding-bottom: 1rem;
+}
+
 /*/////////////////////////////////////////////////*/
 /* règles de la pagination                         */
 /*/////////////////////////////////////////////////*/
