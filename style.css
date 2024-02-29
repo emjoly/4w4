@@ -271,6 +271,7 @@ blockquote {
   flex-direction: column;
   justify-content: space-between;
   flex: 0 1 23%;
+  padding: 2rem;
   background-color: hsl(var(--hu1), var(--s-arriere1), 7%);
 }
 
@@ -278,4 +279,14 @@ blockquote {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .carte {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    flex: auto;
+  }
 }

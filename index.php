@@ -26,6 +26,11 @@
   <div id="accueil" class="global">
     <section class="accueil__section">
       <h2>Accueil h2</h2>
+      <nav class="menu">
+        <a href="#">Galerie</a>
+        <a href="#">Évènement</a>
+        <a href="#">Footer</a>
+      </nav>
       <div class="section__cours">
         <?php
         /*
@@ -40,19 +45,23 @@
       } 
       */
         if (have_posts()) :
-          while (have_posts()) : the_post(); ?>
+          while (have_posts()) : the_post();
+            $titre = get_the_title();
+            $sigle = substr($titre, 0, 7);
+            // strpos() = string position
+            $duree = substr($titre, -6);
+            $nomProg = substr($titre, 7, -6);
+        ?>
             <div class="carte">
-              <h4> <?php the_title(); ?> </h4>
+              <h5> <?php echo $sigle; ?> </h5>
+              <!-- <h4> <?php echo $titre; ?> </h4> -->
+              <h4> <?php echo $nomProg ?></h4>
+              <h5> <?php echo $duree; ?> </h5>
               <p> <?php echo wp_trim_words(get_the_content(), 10); ?> </p>
             </div>
           <?php endwhile; ?>
         <?php endif; ?>
       </div>
-      <nav class="menu">
-        <a href="#">Galerie</a>
-        <a href="#">Évènement</a>
-        <a href="#">Footer</a>
-      </nav>
     </section>
   </div>
   <div id="galerie" class="global diagonal">

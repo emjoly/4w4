@@ -1,31 +1,35 @@
-# lab3
+# Labo #3
 
-## Reproduire et améliorer la maquette présentée en cours
+## Création d'un site WP.
 
-### Continuer la version du labo2
+### Adaptation du thème de exercice #1
 
-- Amélioration du dossier Sass
-- Ajout au style.scss
-- Utilisation de différentes technique pour élaborer une palette de couleur
-  - monochrome (1 hue + variations de saturation et luminosité)
-  - complémentaire (2 hues opposées 180deg + idem)
-  - triade (3 hues 120deg + idem)
-- Utilisation de la regle 60-30-10 (backgorund-texte-element)
-- Améliorer l'entete en ajoutant une image en background
-- Création d'un bouton utilisant les variables, la propriété background-image, linear-gradient. Le bouton réagit aux events :hover et :active
-- Création de lien réagissant aux events :hover :visited :focus
-- Amélioration générale de la pagination
-- Ajout de nouveaux éléments HTML
+Création du modèle index.php
 
-À réaliser :
+Création de la branche labo3
 
-- Améliorer entête
-- Background-image
-- Bouton
-- Liens
-- Améliorer pagination
-- Nouveaux éléments HTML
-- Github page
+minimum 3 commits
+
+Un Readme.md qui contiendra:
+
+- Le nom de l'auteur
+- L'objectif du labo3
+- Les réalisations
+- Un lien vers la github-page
+- Décomposé le titre de chaque cours:
+
+- sigle du cours ex: 582-4W4
+- le titre du cours ex: Conception d'interface et développement Web
+- la durée du cours : 90h
+- Garder les 30 premiers mots de la description du cours.
+
+- La section galerie (ou autre section) affichera la liste des cours du TIM en 3 ou 4 colonnes.
+- La liste devra s'adapter aux différentes largeurs de fenêtre en mobile une seule colonne.
+- Chacune des cartes de cours sera formatés en en utilisant les flex box
+- Barème de correction
+- Organistion du code, 3 commits minimum (1 point)
+- Résultat sous forme de github page avec index.htm (.5 point)
+- Design global de la page (.5 point)
 
 #### GitHub Page
 
