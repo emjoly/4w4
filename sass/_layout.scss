@@ -67,7 +67,8 @@ blockquote {
 @media (max-width: 480px){
   .global > section,
   .global > header,
-  .global > footer{
+  .global > footer,
+  .global > .entete__menu{
     align-items: center;
     display: flex;
     flex-direction: column;
