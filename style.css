@@ -61,6 +61,19 @@ Theme developpé dans le cadre du cours 4w4
 }
 
 /*/////////////////////////////////////////////////*/
+/* variables utile                                 */
+/*/////////////////////////////////////////////////*/
+.bgc-text {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 15px 20px;
+}
+@media screen and (min-width: 1100px) {
+  .bgc-text {
+    background-color: transparent;
+  }
+}
+
+/*/////////////////////////////////////////////////*/
 /* règles de base                                  */
 /*/////////////////////////////////////////////////*/
 /*
@@ -129,7 +142,8 @@ body {
 
 .global > section,
 .global > header,
-.global > footer {
+.global > footer,
+.global > .entete__menu {
   flex: 0 1 1100px;
   padding: 5rem 1rem;
 }
@@ -273,9 +287,10 @@ blockquote {
   border: 1px solid #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex: 0 1 23%;
-  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 252.5px;
+  padding: 1rem;
   background-color: hsl(var(--hu1), var(--s-arriere1), 7%);
 }
 
@@ -283,14 +298,29 @@ blockquote {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center;
 }
 
-@media (max-width: 480px) {
-  .carte {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 2rem;
-    flex: auto;
-  }
+/*
+<div id="menu" class="global">
+  <div class="entete__menu">
+    <div class="menu-jeux-container">
+      <ul id="menu-jeux" class="menu">
+        <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost:8080/4w4-emily/2020/10/07/582-1j1-animation-et-interactivite-en-jeu-75h/">Animation et interactivité</a></li>
+        <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-34"><a href="http://localhost:8080/4w4-emily/2020/10/07/582-2j2creation-de-jeu-2d-60h/">Jeu 2D</a></li>
+        <li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-35"><a href="http://localhost:8080/4w4-emily/2020/10/07/582-3j3-creation-de-jeu-3d-75h/">Jeu 3D</a></li>
+        <li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-36"><a href="http://localhost:8080/4w4-emily/2020/10/07/582-3m5imagerie-3d-75h/">Imagerie 3D</a></li>
+        <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-37"><a href="http://localhost:8080/4w4-emily/2020/10/07/360-4j4-creation-de-jeu-en-equipe-105h/">Création en équipe</a></li>
+      </ul>
+    </div>    
+  </div>
+</div>
+*/
+.menu-jeux-container {
+  border: 1px solid #aaa;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
 }

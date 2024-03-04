@@ -12,7 +12,8 @@ body{
 
 .global > section,
 .global > header,
-.global > footer{
+.global > footer,
+.global > .entete__menu{
   // flex: grow (0=non 1=oui), shrink, basis (width base)
   flex: 0 1 1100px;
   // border: 1px solid var(--couleur-noir);
