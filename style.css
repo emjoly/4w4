@@ -60,6 +60,14 @@ Theme developpé dans le cadre du cours 4w4
   --couleur-lien-visited: hsl(297, 100%, 15%);
 }
 
+#entete {
+  --_couleur-arriere_vague: var(--couleur-arriere-accueil);
+}
+
+#evenement {
+  --_couleur-arriere_vague: var(--couleur-arriere-footer);
+}
+
 /*/////////////////////////////////////////////////*/
 /* variables utile                                 */
 /*/////////////////////////////////////////////////*/
@@ -137,19 +145,24 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 30vh;
 }
 
 .global > section,
-.global > header,
-.global > footer,
-.global > .entete__menu {
+.global > footer {
   flex: 0 1 1100px;
   padding: 5rem 1rem;
 }
 
 .global > header {
-  flex: 1;
+  flex: 0 1 1500px;
+  padding: 3rem 0 0 0;
+  position: sticky;
+  padding: 5rem 1rem;
+}
+
+.entete__menu, .entete__header {
+  flex: 0 1 1500px;
+  position: relative;
 }
 
 #entete {
@@ -243,6 +256,10 @@ blockquote {
   height: 72px;
 }
 
+.remplissage {
+  fill: var(--_couleur-arriere_vague);
+}
+
 @media (max-width: 480px) {
   .vague svg {
     height: 30px;
@@ -318,10 +335,48 @@ blockquote {
 */
 .menu-jeux-container {
   border: 1px solid #aaa;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 50;
+  transform: translateX(-200%);
+}
+@media screen and (min-width: 700px) {
+  .menu-jeux-container {
+    position: static;
+    transform: translateX(0);
+  }
 }
 
-.menu {
+#menu-jeux {
   display: flex;
+  flex-direction: column;
   list-style-type: none;
-  justify-content: space-around;
+  padding-left: 0;
+}
+@media screen and (min-width: 700px) {
+  #menu-jeux {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+#chk_burger {
+  display: none;
+}
+
+#burger {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 700px) {
+  #burger {
+    display: none;
+  }
+}
+
+#chk_burger:checked ~ .menu-jeux-container {
+  transform: translateX(0);
 }

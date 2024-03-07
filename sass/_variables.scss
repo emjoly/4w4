@@ -51,3 +51,11 @@
   --couleur-lien-hover: hsl(258, 61%, 58%);
   --couleur-lien-visited: hsl(297, 100%, 15%);
 }
+
+#entete{
+  --_couleur-arriere_vague: var(--couleur-arriere-accueil);
+}
+
+#evenement{
+  --_couleur-arriere_vague: var(--couleur-arriere-footer);
+}

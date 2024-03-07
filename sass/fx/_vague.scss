@@ -14,6 +14,10 @@
   height: 72px;
 }
 
+.remplissage{
+  fill: var(--_couleur-arriere_vague);
+}
+
 @media (max-width: 480px){
   .vague svg {
     height: 30px;

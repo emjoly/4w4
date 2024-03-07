@@ -14,16 +14,53 @@
 </div>
 */
 
-.menu-jeux-container { //div
+.menu-jeux-container{ //nav
   border: 1px solid #aaa;
+  position: absolute;
+  z-index: 2;
+  //background-color: hsl(var(--hu1), var(--s-arriere1), 7%) ;
+  top: 0;
+  left: 50;
+  transform: translateX(-200%);
+  @media screen and (min-width:700px){
+    position: static;
+    transform: translateX(0);
+  }
 }
 
-.menu{ //ul
+#menu-jeux{ //ul
   display: flex;
+  flex-direction: column;
   list-style-type: none;
-  justify-content: space-around;
+  padding-left: 0;
+  @media screen and (min-width:700px){
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .menu-item{ //li
 
+}
+
+.menu-item a{ //a
+
+}
+
+#chk_burger{
+  display: none;
+}
+
+#burger{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @media screen and (min-width:700px){
+    display: none;
+  }
+}
+
+#chk_burger:checked ~ .menu-jeux-container{
+  transform: translateX(0);
 }
