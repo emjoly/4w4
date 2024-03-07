@@ -17,14 +17,19 @@
 .menu-jeux-container{ //nav
   border: 1px solid #aaa;
   position: absolute;
-  z-index: 2;
-  //background-color: hsl(var(--hu1), var(--s-arriere1), 7%) ;
+  font-size: 1rem;
+  z-index: 300;
+  background-color: hsl(var(--hu1), var(--s-arriere1), 7%) ;
+  background-color: #2a0018b3;
   top: 0;
   left: 50;
   transform: translateX(-200%);
+  right: 50;
   @media screen and (min-width:700px){
-    position: static;
+    position: fixed;
     transform: translateX(0);
+    width: 100%;
+    left: 0;
   }
 }
 
@@ -32,15 +37,21 @@
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
   @media screen and (min-width:700px){
     flex-direction: row;
     justify-content: space-around;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .menu-item{ //li
-
+  padding-top: 1rem;
+  @media screen and (min-width:700px){
+    padding-top: 0;
+  }
 }
 
 .menu-item a{ //a
@@ -49,9 +60,11 @@
 
 #chk_burger{
   display: none;
+
 }
 
 #burger{
+  z-index: 400;
   display: block;
   position: absolute;
   top: 0;

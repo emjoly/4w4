@@ -153,16 +153,19 @@ body {
   padding: 5rem 1rem;
 }
 
-.global > header {
-  flex: 0 1 1500px;
-  padding: 3rem 0 0 0;
-  position: sticky;
-  padding: 5rem 1rem;
-}
-
 .entete__menu, .entete__header {
   flex: 0 1 1500px;
+  padding: 3rem 0 0 0;
   position: relative;
+}
+@media screen and (min-width: 700px) {
+  .entete__menu, .entete__header {
+    padding: 0;
+  }
+}
+
+#menu {
+  background-color: var(--couleur-arriere-entete);
 }
 
 #entete {
@@ -336,15 +339,21 @@ blockquote {
 .menu-jeux-container {
   border: 1px solid #aaa;
   position: absolute;
-  z-index: 2;
+  font-size: 1rem;
+  z-index: 300;
+  background-color: hsl(var(--hu1), var(--s-arriere1), 7%);
+  background-color: rgba(42, 0, 24, 0.7019607843);
   top: 0;
   left: 50;
   transform: translateX(-200%);
+  right: 50;
 }
 @media screen and (min-width: 700px) {
   .menu-jeux-container {
-    position: static;
+    position: fixed;
     transform: translateX(0);
+    width: 100%;
+    left: 0;
   }
 }
 
@@ -352,12 +361,24 @@ blockquote {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 @media screen and (min-width: 700px) {
   #menu-jeux {
     flex-direction: row;
     justify-content: space-around;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.menu-item {
+  padding-top: 1rem;
+}
+@media screen and (min-width: 700px) {
+  .menu-item {
+    padding-top: 0;
   }
 }
 
@@ -366,6 +387,7 @@ blockquote {
 }
 
 #burger {
+  z-index: 400;
   display: block;
   position: absolute;
   top: 0;

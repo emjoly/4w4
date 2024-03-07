@@ -19,17 +19,17 @@ body{
   padding: 5rem 1rem;
 }
 
-.global > header{
-  flex : 0 1 1500px;
-  padding: 3rem 0 0 0 ;
-  position : sticky;
-  padding: 5rem 1rem;
-}
-
 .entete__menu, .entete__header{
   flex: 0 1 1500px;
+  padding: 3rem 0 0 0 ;
   position: relative;
+  @media screen and (min-width: 700px){
+    padding:0;
+  }
+}
 
+#menu{
+  background-color: var(--couleur-arriere-entete);
 }
 
 #entete{
