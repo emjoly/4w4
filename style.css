@@ -209,9 +209,9 @@ blockquote {
 
 @media (max-width: 480px) {
   .global > section,
-  .global > header,
-  .global > footer,
-  .global > .entete__menu {
+  .global > .entete__header,
+  .global > footer {
+    text-align: center;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -226,12 +226,12 @@ blockquote {
   background-size: 75%;
   background-position: 100% 50%;
 }
-
 @media (max-width: 480px) {
   .entete__header {
     background-position: center;
   }
 }
+
 .footer__footer {
   display: flex;
   flex-direction: column;

@@ -3,10 +3,9 @@
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: 100% 50%;
+  @media (max-width: 480px){
+    background-position: center;
+  }
 }
 
-@media (max-width: 480px){
-.entete__header{
-  background-position: center;
-}
-}
+

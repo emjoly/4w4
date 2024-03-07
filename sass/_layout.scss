@@ -73,12 +73,12 @@ blockquote {
 
 @media (max-width: 480px){
   .global > section,
-  .global > header,
-  .global > footer,
-  .global > .entete__menu{
+  .global > .entete__header,
+  .global > footer
+  {
+    text-align: center;
     align-items: center;
     display: flex;
     flex-direction: column;
   }
-
 }
