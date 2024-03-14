@@ -1,19 +1,8 @@
 <?php /*model de base*/ ?>
 <?php get_header() ?>
 
-<!-- <h1>Front-page.php</h1> -->
-<div id="entete" class="global">
-  <section class="entete__header">
-    <div class="entete__header__texte">
-      <h1 class="bgc-text"><?php echo get_bloginfo($show = 'name'); ?></h1>
-      <h2 class="bgc-text"><?php echo get_bloginfo($show = 'description'); ?></h2>
-      <h3 class="bgc-text">TIM - Collège de Maisonneuve</h3>
-    </div>
-    <button class="entete__button">Évènement</button>
+<h1>Single.php</h1>
 
-  </section>
-  <?php get_template_part("gabarit/vague") ?>
-</div>
 <div id="accueil" class="global">
   <section class="accueil__section">
     <h2>Accueil h2</h2>
@@ -23,25 +12,20 @@
       <a href="#">Footer</a>
     </nav>
     <div class="section__pays">
-      <?php if (have_posts()) :
-        while (have_posts()) : the_post(); ?>
+      <?php
+      if (have_posts()) :
+        while (have_posts()) : the_post();
+      ?>
           <div class="carte">
             <h4> <?php the_title(); ?> </h4>
-            <p> <?php echo wp_trim_words(get_the_content(), 10); ?> </p>
-            <p><a href="<?php echo get_permalink() ?>">Voir la suite</a></p>
+            <p> <?php the_content(); ?> </p>
           </div>
         <?php endwhile; ?>
       <?php endif; ?>
     </div>
   </section>
 </div>
-<div id="galerie" class="global diagonal">
-  <section class="galerie__section">
-    <h2>Galerie</h2>
-    <blockquote cite="https://emjoly.github.io/4w4/">"Lorem ipsum dolor, sit amet consectetur adipisicing elit"</blockquote>
-    <cite>-Emily Joly</cite>
-  </section>
-</div>
+
 <div id="evenement" class="global">
   <section class="evenement__section">
     <h2>Évènement</h2>

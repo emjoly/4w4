@@ -1,19 +1,8 @@
 <?php /*model de base*/ ?>
 <?php get_header() ?>
 
-<!-- <h1>Front-page.php</h1> -->
-<div id="entete" class="global">
-  <section class="entete__header">
-    <div class="entete__header__texte">
-      <h1 class="bgc-text"><?php echo get_bloginfo($show = 'name'); ?></h1>
-      <h2 class="bgc-text"><?php echo get_bloginfo($show = 'description'); ?></h2>
-      <h3 class="bgc-text">TIM - Collège de Maisonneuve</h3>
-    </div>
-    <button class="entete__button">Évènement</button>
+<h1>Category.php</h1>
 
-  </section>
-  <?php get_template_part("gabarit/vague") ?>
-</div>
 <div id="accueil" class="global">
   <section class="accueil__section">
     <h2>Accueil h2</h2>

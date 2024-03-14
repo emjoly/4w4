@@ -1,8 +1,8 @@
 /*
 <div id="menu" class="global">
   <div class="entete__menu">
-    <div class="menu-jeux-container">
-      <ul id="menu-jeux" class="menu">
+    <div class="menu-principal-container">
+      <ul id="menu-principal" class="menu">
         <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost:8080/4w4-emily/2020/10/07/582-1j1-animation-et-interactivite-en-jeu-75h/">Animation et interactivité</a></li>
         <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-34"><a href="http://localhost:8080/4w4-emily/2020/10/07/582-2j2creation-de-jeu-2d-60h/">Jeu 2D</a></li>
         <li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-35"><a href="http://localhost:8080/4w4-emily/2020/10/07/582-3j3-creation-de-jeu-3d-75h/">Jeu 3D</a></li>
@@ -14,7 +14,7 @@
 </div>
 */
 
-.menu-jeux-container{ //nav
+.menu-principal-container{ //nav
   border: 1px solid #aaa;
   position: absolute;
   font-size: 1rem;
@@ -33,7 +33,7 @@
   }
 }
 
-#menu-jeux{ //ul
+#menu-principal{ //ul
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -74,6 +74,6 @@
   }
 }
 
-#chk_burger:checked ~ .menu-jeux-container{
+#chk_burger:checked ~ .menu-principal-container{
   transform: translateX(0);
 }
