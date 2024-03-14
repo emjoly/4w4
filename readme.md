@@ -1,28 +1,16 @@
-# Labo #4
+# TP1 - Club de voyage
 
-## Création du menu principal
+### Objectif : créer un site web pour un club de voyage qui permettra de mettre en valeur les différentes destinations.
 
-- Ajouter un menu permettant d'accéder à:
-  - vos cinq cours préférés
-  - chacune des sections de la page
-- Le menu doit être formatter en utilisant composant/\_menu.scss Le menu doit être adaptatif et être amovible en version mobile.
+### Autrice
 
-## Création d'un header.php
+### Groupe
 
-- Créer le template header.php qui contiendra la structure d'entête de la page qui sera reproduite dans chacun des modules du thème
+### Description du projet: (fonctionnalités spécifiques)
 
-## Création d'un « template-part » (gabarit)
+### Liens URL:
 
-- Créer un template-part qui permettra d'afficher les vagues.
+- Lien vers le serveur distant whc.ca:
 
-## integration et codification (1 point)
-
-- intégration de chacun des éléments précédents de façon structuré. (1 point)
-
-## Design général de la page et organisation (1 point)
-
-- Production de 5 commits
-
-#### GitHub Page
-
-https://emjoly.github.io/4w4/
+- Lien vers la GitHub page de la page d'accueil:
+  https://emjoly.github.io/4w4/
